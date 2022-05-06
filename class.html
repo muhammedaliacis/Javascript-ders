@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function ders (isim, kod, hoca, tarih)
+            {
+            this.isim =isim;
+            this.kod = kod;
+            this.hoca =hoca;
+            this.tarih=tarih; 
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+           var ders1 = new ders ("javascript", 42, "muhammed", 2022);
+           document.write(ders1.hoca);
+            document.write("<br/>");
+           var ülke1 = {isim: "Almanya", dil: "Almanca", konum: "AB", kurulus: 1871};
+           document.write(ülke1.konum);
+        </script>
+
+    </body>
+</html>
