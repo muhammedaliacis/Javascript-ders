@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var dersListesi = new Array ("HTML", "JAVA", "JS", "Python");
+            document.write(dersListesi[0]);
+            document.write("</br>");  // newline
+            var verilecekDersler = new Array ("C, C++");
+
+            //JOİN METHOD: yazildiği icin noktayla ayirir.
+            document.write(dersListesi.join("."));
+
+            document.write("<hr/>");
+
+            var dersler = new Array (dersListesi[0], dersListesi[1], verilecekDersler[0], verilecekDersler[1]);
+            document.write(dersler.join("-"));
+
+            document.write("<hr/>");
+            
+            //CONCAT METHOD: parantez icinde yazilan diziyi diğer dizinin sonuna ekler.
+            document.write(verilecekDersler.concat(dersListesi).join("-")); 
+
+            document.write("<hr/>");
+
+            //REVERSE METHOD: diziyi ters çevirir.
+            var tersDersler = new Array ();
+            tersDersler = dersListesi.reverse(); 
+            document.write(tersDersler); //  TERSDERSLER = ("PYTHON", "JS", "JAVA", "HTML")
+
+            document.write("<hr/>");
+
+            //SORT METHOD: asciiye göre kücükten büyüge sıralar.
+            document.write(tersDersler.sort().join(" ,")); 
+
+            document.write("<hr/>");
+     
+            //PUSH METHOD: dizinin sonunda ekler.
+            dersListesi.push("PHP", "React");
+            document.write(dersListesi.join());
+     
+            document.write("<hr/>");
+            
+            //POP METHOD: listenin son elemanını siler.
+            dersListesi.pop();
+            document.write(dersListesi.join());
+
+
+
+        </script>
+
+    </body>
+</html>
