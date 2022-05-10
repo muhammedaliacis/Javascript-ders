@@ -5,10 +5,26 @@
     </head>
     <body>
 
-    <form>
-        <input type="button" value="buton" >
+    <form name="giris">
+        <fieldset><legend>Kullanıcı Giris Alanı</legend>
+        Kullanici:  <input type="text" name="username">
         <br>
-        <input type="text" name="text1">
+        Sifre: <input type="password" name="password">
+        <br>
+        <input type="button" value="Gönder" >
+        </fieldset>
+        
+    </form>
+    <hr>
+    <form name="anket">
+        
+        <fieldset><legend>Anket Alanı</legend>
+        Nerede ikamet ediyorsunuz: <br>
+        <input type="checkbox" name="adres" value="TR"> Türkiye
+        <input type="checkbox" name="adres" value="AB"> Avrupa Birliği
+        <input type="checkbox" name="adres" value="ABD"> ABD
+        
+        </fieldset>
     </form>
     <script type="text/javascript">
         var x = document.forms[0].elements[0].value;
