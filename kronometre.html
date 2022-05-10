@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="kron">	<input type="button" value="kronometre" onClick="setInterval('kronometre()',1000);"></div>
+        <br/>
+        <div id="kron">	<input type="button" value="Durdur" onClick="kronometre(0);"></div>
+		 <br/>
+        <script type="text/javascript">
+            var saniye = 0;
+
+            function kronometre(x)
+            {
+                
+                if (x != 0)
+                {                var dak = Math.floor(saniye/60);
+                var sa = Math.floor(saniye/3600);
+                var dakika = dak%60;
+                var san = saniye%60;
+
+                zaman =sa+ ": " +dakika + ": " + san;
+                
+                document.write(zaman);
+                document.write("<br/>");
+                saniye++;}
+                else
+                    {return (0);}
+                
+
+               
+            }
+
+        </script>
+    </body>
+</html>
